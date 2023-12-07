@@ -65,7 +65,8 @@ public class Main {
             if (entry.getValue().size() < 12) {
                 writer.write(entry.getKey() + ":\n");
                 Set<String> services = new HashSet<>(Arrays.asList(
-                        "газоснабжение", "теплоснабжение", "гвс", "xвс", "электроснабжение"
+                        "газоснабжение", "теплоснабжение", "ГВС", "ХВС", "электроснабжение",
+                        "домофон", "капремонт", "квартплата", "ТБО"
                 ));
                 for (String fileName : entry.getValue()) {
                     String service = fileName.split("_")[0];
